@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LayoutInflaterUtils</string>
+    <string name="hello">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_view_parent">ViewParentActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_layout_params">LayoutParamsActivity</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+		android:id="@+id/edit"
+		android:icon="@drawable/ic_launcher"
+		android:title="编辑">
+		<!-- “编辑”菜单项的子菜单 -->
+		<menu>
+			<item
+				android:id="@+id/find"
+				android:title="查找"/>
+		</menu>
+	</item>
+	<item
+	    android:id="@+id/close"
+		android:icon="@drawable/ic_launcher"
+		android:title="关闭" />
+</menu>
+<!-- 
+注意：在Android中最多仅支持两级菜单
+ -->
