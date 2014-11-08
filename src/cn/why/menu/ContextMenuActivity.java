@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -29,6 +30,25 @@ public class ContextMenuActivity extends Activity {
 		MenuInflater menuInflater = getMenuInflater();
 		menuInflater.inflate(R.menu.activity_menu, menu);
 		Toast.makeText(this, "View =" + v, 0).show();
-		super.onCreateContextMenu(menu, v, menuInfo);
+		// 设置菜单的Icon和Title
+		menu.setHeaderIcon(R.drawable.ic_launcher);
+		menu.setHeaderTitle("ABC");
 	}
+	
+	@Override
+	public boolean onContextItemSelected(MenuItem item) {
+			switch(item.getItemId()){
+			case R.id.edit:
+			case R.id.close:
+				if(item.isChecked()){
+					item.setChecked(false);
+				}else{
+					item.setChecked(true);
+				}
+			break;
+		}
+		Toast.makeText(this,item.getTitle(),0).show();
+		return true;
+	}
+	
 }

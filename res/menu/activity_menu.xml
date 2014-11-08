@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
   <item
 		android:id="@+id/edit"
 		android:icon="@drawable/ic_launcher"
@@ -15,7 +16,13 @@
 	    android:id="@+id/close"
 		android:icon="@drawable/ic_launcher"
 		android:title="关闭" />
+	</group>
 </menu>
 <!-- 
 注意：在Android中最多仅支持两级菜单
+|-  使用<group>标签可以将多个<item>设置到一组中。
+   |-  使用android:checkableBehavior属性可以设置组的选择行为，取值为：
+      |-  none 正常。
+      |-  single 单选按钮。
+      |-  all 多选按钮。
  -->
