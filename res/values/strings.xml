@@ -9,5 +9,6 @@
     <string name="title_activity_layout_params">LayoutParamsActivity</string>
     <string name="title_activity_dialog">DialogActivity</string>
     <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_context_menu">ContextMenuActivity</string>
 
 </resources>

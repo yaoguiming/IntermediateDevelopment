@@ -46,7 +46,7 @@ public class LayoutInflateActivity extends ActionBarActivity {
         linearLayout.addView(linearLayout4);
         
         Intent intent = new Intent();
-        intent.setClass(LayoutInflateActivity.this, cn.why.menu.MenuActivity.class);
+        intent.setClass(LayoutInflateActivity.this, cn.why.menu.ContextMenuActivity.class);
         startActivity(intent);
         
     }

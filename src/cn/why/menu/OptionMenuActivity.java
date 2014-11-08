@@ -10,7 +10,7 @@ import android.view.SubMenu;
 import android.widget.Toast;
 import cn.why.layoutinflaterutils.R;
 
-public class MenuActivity extends Activity {
+public class OptionMenuActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MenuActivity extends Activity {
 			menuItem.setOnMenuItemClickListener(new OnMenuItemClickListener() {
 				public boolean onMenuItemClick(MenuItem menuItem) {
 					System.out.println(menuItem.getTitle());
-					Toast.makeText(MenuActivity.this, menuItem.getTitle(), Toast.LENGTH_SHORT).show();
+					Toast.makeText(OptionMenuActivity.this, menuItem.getTitle(), Toast.LENGTH_SHORT).show();
 					return false;
 				}
 			});

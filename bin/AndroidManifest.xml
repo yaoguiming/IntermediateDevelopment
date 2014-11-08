@@ -35,8 +35,12 @@
             android:label="@string/title_activity_dialog" >
         </activity>
         <activity
-            android:name="cn.why.menu.MenuActivity"
+            android:name="cn.why.menu.OptionMenuActivity"
             android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="cn.why.menu.ContextMenuActivity"
+            android:label="@string/title_activity_context_menu" >
         </activity>
     </application>
 
